@@ -6,6 +6,7 @@ import 'dart:async';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:http/http.dart' as http;
 import 'package:laundry_delivery/HttpAddress.dart';
+import 'package:laundry_delivery/AddCart.dart';
 
 class PickupDetails extends StatefulWidget {
   int _id;
@@ -147,7 +148,7 @@ class _PickupDetailsState extends State<PickupDetails> {
                   onTap: () {
                     Navigator.of(context).push(
                       PageRouteBuilder(
-                        pageBuilder: (_, __, ___) => new ItemsPage(
+                        pageBuilder: (_, __, ___) => new AddCart(
                           value: ItemInfo(
                               ids: widget._id,
                               delivery_options: delivery_option),

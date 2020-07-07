@@ -149,7 +149,7 @@ class _DeliveryPageState extends State<DeliveryPage> {
             automaticallyImplyLeading: false),
         body: ListView.builder(
           itemCount: list.length,
-          itemExtent: 150,
+          itemExtent: 200,
           itemBuilder: (BuildContext context, int i) {
             if (i == list.length) {
               return CupertinoActivityIndicator();
